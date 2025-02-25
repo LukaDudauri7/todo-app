@@ -51,4 +51,7 @@ h1{
 img{
   width: 25px;
   height: 25px;
+  margin-bottom: -7px;
+  margin-left: 5px;
+  cursor: pointer;
 }
