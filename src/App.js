@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import add from './add.jpg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1> To Do List</h1>
+      <div className='ul-bg'>
+        <ul>
+          <label for="name">Name (4 to 8 char):</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required minlength="4" 
+            maxlength="8" 
+            size="10" 
+          />
+          <img src={add}></img>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+        </ul>
+      </div>
     </div>
   );
 }
