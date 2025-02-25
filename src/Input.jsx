@@ -2,16 +2,13 @@ import add from './add.jpg';
 function Input() {
     return (
         <div>
-            <label for="name">Name (4 to 8 char):</label>
             <input 
                 type="text" 
-                id="name" 
-                name="name" 
+                id="tood-input" 
                 required minlength="4" 
-                maxlength="8" 
-                size="10" 
+                size="20" 
             />
-          <img src={add}></img>
+          <img id="submit" src={add}></img>
         </div>
     );
 }
