@@ -1,6 +1,6 @@
-import './todoItem.css';
+import './TodoItem.css';
 
-function todoItem() {
+function TodoItem() {
     return (
         <div>
         {/* <div className="todo-item"> */}
@@ -9,4 +9,4 @@ function todoItem() {
     );
 }
 
-export default todoItem;
+export default TodoItem;
