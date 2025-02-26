@@ -1,6 +1,6 @@
-
 import './App.css';
 import Input from './Input';
+import todoItem from './todoItem.jsx';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <div className='ul-bg'>
           <Input />
       </div>
+      <todoItem />
     </div>
   );
 }
