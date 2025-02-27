@@ -1,6 +1,7 @@
 import './Input.css';
-import add from '.././../assets/add.jpg';
-function Input() {
+import add from '../../assets/add.jpg';
+function Input({addTask}) {
+
     return (
         <div>
             <div className="header-container">
@@ -8,12 +9,12 @@ function Input() {
                     <input 
                         className='input'
                         type="text" 
-                        id="tood-input" 
+                        id="todo-input" 
                         required minlength="4" 
                         size="20" 
                     />
                 </div>
-                <img id="submit" src={add}></img>
+                <img onClick={addTask} id="submit" src={add}></img>
             </div>
         </div>
     );

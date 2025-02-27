@@ -1,13 +1,17 @@
 import './TodoItem.css';
+import deleteImage from '../../assets/delete.jpg';
 
-function TodoItem() {
+function TodoItem({ tasks }) {
     return (
         <div>
-            <div className="todo-item-container">
-                <div className="todo-item">
-                    Task
+            {
+                tasks.map((task, index) => (
+                <div className="todo-item-container">
+                    <div className="todo-item"> {task} </div>
+                    <img src={deleteImage}/>
                 </div>
-            </div>
+                ))
+            }
         </div>
     );
 }
