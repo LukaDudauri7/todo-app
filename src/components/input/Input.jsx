@@ -1,4 +1,4 @@
-import add from './add.jpg';
+import add from '.././../assets/add.jpg';
 function Input() {
     return (
         <div>

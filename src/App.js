@@ -1,6 +1,6 @@
 import './App.css';
-import Input from './Input';
-import TodoItem from './TodoItem';
+import Input from './components/input/Input';
+import TodoItem from './components/todoItem/TodoItem';
 
 function App() {
   return (
