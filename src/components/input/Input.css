@@ -1,0 +1,23 @@
+img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+    left: 15px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10px;
+}
