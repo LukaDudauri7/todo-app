@@ -11,6 +11,7 @@ function App() {
   return (
     <div>
       <h1> Todo List</h1>
+      
       <Input addTask={addTask} />
       <TodoItem tasks={tasks} />
     </div>
