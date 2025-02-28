@@ -5,13 +5,16 @@ import { useState } from 'react';
 
 function App() {
   const [tasks, setTasks] = useState(['Task']);
-  const addTask = () => {
-    setTasks([...tasks, document.getElementById('todo-input').value]);
-  }
+  const addTask = (task) => {
+    console.log(task.trim());
+    
+    if (task.trim() !== "") {
+      setTasks([...tasks, task]);
+    }
+  };
   return (
     <div>
       <h1> Todo List</h1>
-      
       <Input addTask={addTask} />
       <TodoItem tasks={tasks} />
     </div>

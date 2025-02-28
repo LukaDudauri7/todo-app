@@ -1,7 +1,15 @@
 import './Input.css';
 import add from '../../assets/add.jpg';
+import { useState } from 'react';
 function Input({addTask}) {
+    const [inputValue, setInputValue] = useState('');
 
+    const handleAddTask = () => {
+        if(inputValue.trim() !== '') {
+            addTask(inputValue);
+            setInputValue('');
+        }
+    }
     return (
         <div>
             <div className="header-container">
@@ -9,12 +17,12 @@ function Input({addTask}) {
                     <input 
                         className='input'
                         type="text" 
-                        id="todo-input" 
-                        required minlength="4" 
-                        size="20" 
+                        value={inputValue}
+                        onChange={(e) => setInputValue(e.target.value)}
+                        placeholder="Enter a task"
                     />
                 </div>
-                <img onClick={addTask} id="submit" src={add}></img>
+                <img onClick={handleAddTask} id="submit" src={add}></img>
             </div>
         </div>
     );
