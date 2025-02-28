@@ -6,7 +6,7 @@ function TodoItem({ tasks }) {
         <div>
             {
                 tasks.map((task, index) => (
-                <div className="todo-item-container">
+                <div key={index} className="todo-item-container">
                     <div className="todo-item"> {task} </div>
                     <img src={deleteImage}/>
                 </div>

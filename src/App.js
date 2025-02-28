@@ -6,8 +6,6 @@ import { useState } from 'react';
 function App() {
   const [tasks, setTasks] = useState(['Task']);
   const addTask = (task) => {
-    console.log(task.trim());
-    
     if (task.trim() !== "") {
       setTasks([...tasks, task]);
     }

@@ -11,19 +11,17 @@ function Input({addTask}) {
         }
     }
     return (
-        <div>
-            <div className="header-container">
-                <div className='input-container'>
-                    <input 
-                        className='input'
-                        type="text" 
-                        value={inputValue}
-                        onChange={(e) => setInputValue(e.target.value)}
-                        placeholder="Enter a task"
-                    />
-                </div>
-                <img onClick={handleAddTask} id="submit" src={add}></img>
+        <div className="header-container">
+            <div className='input-container'>
+                <input 
+                    className='input'
+                    type="text" 
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
+                    placeholder="Enter a task"
+                />
             </div>
+            <img onClick={handleAddTask} id="submit" src={add}></img>
         </div>
     );
 }
