@@ -10,11 +10,16 @@ function App() {
       setTasks([...tasks, task]);
     }
   };
+  const removeTask = (index) => {
+    let newTasks = [...tasks];
+    newTasks.splice(index, 1);
+    setTasks(newTasks);
+  }
   return (
     <div>
       <h1> Todo List</h1>
       <Input addTask={addTask} />
-      <TodoItem tasks={tasks} />
+      <TodoItem tasks={tasks} removeTask={removeTask}/>
     </div>
   );
 }

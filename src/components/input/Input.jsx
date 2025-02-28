@@ -18,7 +18,7 @@ function Input({addTask}) {
                     type="text" 
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
-                    placeholder="Enter a task"
+                    placeholder="Enter a task name"
                 />
             </div>
             <img onClick={handleAddTask} id="submit" src={add}></img>
